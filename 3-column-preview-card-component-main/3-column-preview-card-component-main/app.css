@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* (paragraphs) */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+.bright-orange {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.bright-orange .btn {
+    color: var(--bright-orange);
+}
+
+.dark-cyan .btn {
+    color: var(--dark-cyan);
+}
+
+.very-dark-cyan .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+.card {
+    padding: 50px;
+}
+
+.card img {
+    margin-bottom: 30px;
+}
+
+.card .brand {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.card p {
+    color: var(--transparent-white);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 860px;
+        margin: auto;
+    }
+
+    .bright-orange {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .very-dark-cyan {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .card p {
+        margin-bottom: 60px;
+    }
+}
